@@ -225,19 +225,11 @@ body {
 .wishlist,
 .cart {
 	font-size: 3rem;
-	color: #333;
+	color: var(--gray);
 	line-height: 1;
 	text-align: center;
 	padding-right: 15px;
 	cursor: pointer;
-}
-
-.account>i,
-.wishlist>i,
-.cart>i {
-	font-size: 20px;
-	color: #333;
-	text-align: center;
 }
 
 .cart-count {
@@ -250,18 +242,18 @@ body {
 .wishlist-count {
 	min-width: 1.6rem;
 	height: 1.6rem;
-	background-color: #a6c76c;
+	background-color: var(--green);
 }
 
 span.count-wishlist {
 	position: absolute;
 	top: 16px;
 	right: 75px;
-	background-color: green;
+	background-color: var(--green);
 	border-radius: 50%;
 	width: 19px;
 	height: 20px;
-	color: white;
+	color: var(--white);
 	-webkit-border-radius: ;
 	-moz-border-radius: ;
 	-ms-border-radius: ;
@@ -351,16 +343,22 @@ span.count-cart {
 	color: var(--orange);
 }
 
-.navbar li:hover,
 a:hover,
 .menubar span:hover,
-#menu:hover {
+#menu:hover,
+box-icon:hover {
 	color: var(--orange);
 	transform: scale(1.1);
+
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
+}
+
+.navlist li:hover,
+.navlist li:first-child {
+	border-bottom: 1px solid var(--orange);
 }
 
 /* End Header Nav Bar */
