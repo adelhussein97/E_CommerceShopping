@@ -351,7 +351,8 @@ span.count-cart {
 a:hover,
 .menubar span:hover,
 #menu:hover,
-box-icon:hover {
+box-icon:hover,
+.navlist li:hover {
 	color: var(--orange);
 	transform: scale(1.1);
 
