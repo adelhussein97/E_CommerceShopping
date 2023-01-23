@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+	font-family: "Noto Sans Cherokee", sans-serif;
+	font-family: "Open Sans", sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+
+	/* All colors */
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+	--primary: #007bff;
+	--secondary: #6c757d;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--light: #f8f9fa;
+	--dark: #343a40;
+	/* All colors */
+}
+
+.container {
+	background-color: var();
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+/*-------------------------------------------------- */
+
+footer:first-child .left {
+	float: left;
+}
+
+footer:first-child .right {
+	float: right;
+	margin-top: 20px;
+}
+
+ul li {
+	padding-top: 10px;
+}
+
+footer {
+	color: #777;
+}
+
+footer a {
+	color: inherit;
+}
+
+footer a:hover {
+	color: rgba(76, 161, 76, 0.8);
+	;
+}
+
+i {
+	margin-right: 15px;
+}
+
+footer p {
+	line-height: 25px;
+}
+
+footer .left .left {
+	float: left;
+	margin-top: 36px;
+}
+
+footer .left .right {
+	float: right;
+	margin-top: 30px;
+	margin-right: 80px;
+
+}
+
+footer .AboutUs {
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+footer hr {
+	margin-top: 20px;
+}
+
+footer .Clear {
+	clear: both;
+}
+
+footer h4,
+footer .logo {
+	margin-bottom: 15px;
+}
+
+footer .logo {
+	margin-top: 14px;
+	width: 105px;
+	height: 25px;
+
+}
+
+footer .left .left a {
+	color: #a6c76c;
+	font-family: 'Poppins';
+
+	font-size: 1.5rem;
+	letter-spacing: -.02em;
+	line-height: 1.3;
+}
+
+ footer p,a
+ {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+
+ }
