@@ -1,31 +1,22 @@
-let vid = document.getElementById("vid");
-vid.style.cssText = `
-display:block; 
-margin-left: 135px;   
-padding: 22px;
-border-radius: 5px;
-font-size: 20px;
-cursor:pointer;`;
 
-let click = document.getElementById("click");
-click.style.cssText = ` 
-display:block; 
-margin-left: 180px;   
-padding: 22px;
-background-color:gray;
-color:white;
-border-radius: 5px;
-font-size: 20px;
-cursor:pointer`;
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () { myFunction() };
 
-vid.onclick = function () {
-	if (vid.paused) {
-		vid.play();
-	} else {
-		vid.pause();
+// Get the navbar
+var navbar = document.getElementsByClassName( "navbar" )[ 0 ];
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position.
+// Remove "sticky" when you leave the scroll position
+function myFunction ()
+{
+	if ( window.pageYOffset >= sticky )
+	{
+		navbar.classList.add( "sticky" )
+	} else
+	{
+		navbar.classList.remove( "sticky" );
 	}
-};
-
-click.onclick = function () {
-	open("form.html");
-};
+}

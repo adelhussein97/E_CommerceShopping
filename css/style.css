@@ -254,10 +254,10 @@ span.count-wishlist {
 	width: 19px;
 	height: 20px;
 	color: var(--white);
-	-webkit-border-radius: ;
-	-moz-border-radius: ;
-	-ms-border-radius: ;
-	-o-border-radius: ;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 
 span.count-cart {
@@ -269,22 +269,27 @@ span.count-cart {
 	width: 19px;
 	height: 20px;
 	color: var(--white);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 
 /* End Middle Header */
 /* Start Header Nav Bar */
 .navbar {
+	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	position: sticky;
-	top: 10px;
-	transition: all 2s;
+	position: static;
+	top: auto;
+	transition: all ease-in-out .5s;
 	color: var(--dark);
-	-webkit-transition: all 2s;
-	-moz-transition: all 2s;
-	-ms-transition: all 2s;
-	-o-transition: all 2s;
+	-webkit-transition: all ease-in-out .5s;
+	-moz-transition: all ease-in-out .5s;
+	-ms-transition: all ease-in-out .5s;
+	-o-transition: all ease-in-out .5s;
 }
 
 .navlist {
@@ -359,6 +364,17 @@ box-icon:hover {
 .navlist li:hover,
 .navlist li:first-child {
 	border-bottom: 1px solid var(--orange);
+}
+
+/* Sticky navbar when reach scroll to 60px */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky+pre {
+	padding-top: 60px;
 }
 
 /* End Header Nav Bar */
