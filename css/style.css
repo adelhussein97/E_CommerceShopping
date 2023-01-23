@@ -380,11 +380,11 @@ box-icon:hover {
 /* End Header Nav Bar */
 /*start Footer*/
 
-footer:first-child .left {
+footer .left {
 	float: left;
 }
 
-footer:first-child .right {
+footer .right {
 	float: right;
 	margin-top: 20px;
 }
