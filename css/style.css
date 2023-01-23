@@ -484,7 +484,7 @@ a {
 	color: white;
 }
 .slide img {
-	width: 100%;
+	max-width: 100%;
 }
 
 .slider-button {
