@@ -34,9 +34,7 @@ function StartSlider() {
 StartSlider();
 
 function next() {
-	if (counter < count - 1) {
-		counter++;
-	}
+	if (counter < count - 1) counter++;
 	move();
 }
 
@@ -46,6 +44,7 @@ function prev() {
 }
 function move() {
 	slider.style.transform = `translateX(${-step * counter}px)`;
+	step = 942;
 }
 
 // end slider
