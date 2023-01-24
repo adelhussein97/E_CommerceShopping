@@ -203,22 +203,28 @@ body {
 
 .input-search>button {
 	background-color: var(--white);
-	width: 45px;
+	width: 35px;
 	cursor: pointer;
 	border: 0.5px solid gray;
-	border-left: 0px;
+	border: none;
+	z-index: 1;
+	position: relative;
+	right: 52px;
+	height: 35px;
+	display: flex;
+	justify-content: right;
+	top: 10px;
 }
 
 .form-control,
 .form-control input:focus {
-	width: 404px;
+	width: 470px;
 	height: 50px;
 	position: relative;
 	display: flex;
 	align-items: center;
 	align-content: center;
 	border: 0.5px solid gray;
-	border-right: 0px;
 	padding-left: 10px;
 }
 
@@ -519,10 +525,10 @@ box-icon:hover,
 	align-items: center;
 	justify-content: center;
 	transition: all .35s ease;
-	-webkit-transition: ;
-	-moz-transition: ;
-	-ms-transition: ;
-	-o-transition: ;
+	-webkit-transition: all .35s ease;
+	-moz-transition: all .35s ease;
+	-ms-transition: all .35s ease;
+	-o-transition: all .35s ease;
 }
 
 .row:hover {
