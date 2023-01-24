@@ -285,6 +285,7 @@ span.count-cart {
 	top: auto;
 	transition: all ease-in-out 0.5s;
 	color: var(--dark);
+	background-color: var(--white);
 	-webkit-transition: all ease-in-out 0.5s;
 	-moz-transition: all ease-in-out 0.5s;
 	-ms-transition: all ease-in-out 0.5s;
@@ -446,14 +447,54 @@ box-icon:hover,
 /* end slider */
 
 /*start Footer*/
+footer {
+	background-color: #f8f8f8;
+
+}
 
 footer .left {
 	float: left;
+	margin: 15px;
 }
 
 footer .right {
 	float: right;
-	margin-top: 20px;
+	margin: 15px;
+}
+
+.footer .footerleft {
+	float: left;
+	width: 450px;
+	justify-content: left;
+}
+
+.footer .footerleft p,
+.footer .footerleft a {
+	padding: 15px;
+}
+
+.footer .footerleft i {
+	font-size: 20px;
+	color: var(--orange);
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+}
+
+
+footer h4,
+footer .logo {
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+
+.footerright {
+	display: flex;
+	justify-content: space-between;
+
+
 }
 
 ul li {
@@ -512,8 +553,10 @@ footer .logo {
 
 footer .logo {
 	margin-top: 14px;
-	width: 105px;
-	height: 25px;
+	width: 50px;
+	height: 35px;
+	background-color: gray;
+	opacity: 0.5;
 }
 
 footer .left .left a {

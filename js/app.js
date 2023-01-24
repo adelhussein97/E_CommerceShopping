@@ -1,3 +1,4 @@
+// Start Header Functions
 // When the user scrolls the page, Fixed Navbar with position sticky
 window.onscroll = function ()
 {
@@ -22,6 +23,14 @@ function myFunction ()
 		navbar.classList.remove( "sticky" );
 	}
 }
+// Change Border Input Search
+function ChangeBorder ()
+{
+	var element = document.getElementById( "q" );
+	element.style.borderColor = "gray";
+}
+// End Header Functions
+
 // start slider
 const sliderContainer = document.getElementById( "slider-container" );
 const slider = document.getElementById( "slider" );
