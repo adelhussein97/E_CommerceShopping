@@ -7,6 +7,7 @@ if ( localStorage.getItem( "Count" ) )
     Count = parseInt( localStorage.getItem( "Count" ) );
 }
 
+
 if ( localStorage.getItem( "sum" ) )
 {
     sum = parseInt( localStorage.getItem( "sum" ) );
