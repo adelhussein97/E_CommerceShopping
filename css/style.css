@@ -56,8 +56,8 @@ body {
 	--h3-font: 2rem;
 	--normal-font: 1rem;
 	--primary-color: #00b5d5;
-    --secondary-color: #0077b5;
-    --gray-color: #808080;
+	--secondary-color: #0077b5;
+	--gray-color: #808080;
 	/* All colors */
 }
 
@@ -696,107 +696,119 @@ box-icon:hover,
 
 
 /*Product*/
- 
+
 .product {
- 
-	 
-    width: 1180px;
-    padding: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
-    gap: 35px;
+
+
+	width: 1180px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+	gap: 35px;
 }
+
 @media (max-width: 768px) {
-    .heading h1 {
-        font-size: 21px;
-    }
+	.heading h1 {
+		font-size: 21px;
+	}
 }
+
 @media (max-width: 1200px) {
-    .product {
-        width: 1000px;
-    }
+	.product {
+		width: 1000px;
+	}
 }
 
 @media (max-width: 1024px) {
-    .product {
-        width: 750px;
-    }
+	.product {
+		width: 750px;
+	}
 }
 
 @media (max-width: 768px) {
-    .product {
-        width: 100%;
-    }
+	.product {
+		width: 100%;
+	}
 }
-.box
-{
+
+.box {
 	text-align: center;
 }
+
 .box img {
-    width: 100%;
+	width: 100%;
 	height: 250px;
 	transition: all 2s;
 }
 
 .box img:hover {
-    cursor: pointer;
-   
+	cursor: pointer;
+
 	scale: 1.1;
 }
 
 .box h2 {
 	font-family: 'Source Sans Pro', sans-serif;
- 
-    font-size: 20px;
-	 
+
+	font-size: 20px;
+
 }
 
 .box p {
-    padding: 0 20px;
+	padding: 0 20px;
 	height: 45px;
-    font-size: 12.5px;
-    line-height: 1.35;
-    color: var(--gray-color);
+	font-size: 12.5px;
+	line-height: 1.35;
+	color: var(--gray-color);
 }
 
 .box span {
-    font-weight: 800;
-    font-size: 18px;
-	 
-	 
+	font-weight: 800;
+	font-size: 18px;
+
+
 }
 
-.box .rate  i{
-   color: #ffee01;
-    font-size: 12px;
+.box .rate i {
+	color: #ffee01;
+	font-size: 12px;
 }
-  
+
 
 .box .options {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
+.box .options i {
+	color: white;
+	font-size: 12px;
+}
 
 .box .options a {
-    color: white;
+	color: white;
 	width: 100%;
-    background-color:#746492;
-    display: inline-block;
-    padding: 10px 15px;
-  
-    font-weight: 600;
-    font-size: 12px;
-    border-radius: 50px;
+	background-color: #746492;
+	display: inline;
+	padding: 10px 15px;
+	margin-right: 10px;
+	font-weight: 600;
+	font-size: 12px;
+	border-radius: 50px;
 	transition: all 2s;
 	text-align: center;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
 }
 
 .box .options a:hover {
-   opacity: 1.8;
+	opacity: 1.8;
 }
+
 /*End Product*/
 
 

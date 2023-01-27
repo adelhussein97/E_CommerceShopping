@@ -65,3 +65,23 @@ function move ()
 }
 
 // end slider
+
+
+// Start Single Product Details
+function incrementQty ()
+{
+	var qty = document.getElementById( "input-qtyCart" );
+	if ( qty.value < 10 )
+		qty.value++;
+
+
+}
+function decrementQty ()
+{
+	var qty = document.getElementById( "input-qtyCart" );
+	if ( qty.value > 1 )
+		qty.value--;
+}
+
+
+// End Single Product Details

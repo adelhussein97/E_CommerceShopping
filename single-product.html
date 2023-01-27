@@ -99,8 +99,8 @@
                     </div>
                     <div class="header-middle">
                         <ul class="navlist">
-                            <li><a class="focus" href="#link">Home</a></li>
-                            <li><a href="#link">SHOP</a></li>
+                            <li><a class="focus" href="index.html">Home</a></li>
+                            <li><a href="Product.html">SHOP</a></li>
                             <li><a href="#link">CATALOGUE</a></li>
                             <li><a href="#link">NEW FEATURES</a></li>
                             <li><a href="#link">CONTACT</a></li>
@@ -139,7 +139,7 @@
 
                 <div class="product-details-right">
                     <div class="product-details">
-                        <h1 class="product-title">Dark yellow lace cut out swing dress</h1>
+                        <h1 id="product-title" class="product-title">Dark yellow lace cut out swing dress</h1>
                         <!-- End .product-title -->
                         <div class="product-price">
                             $84.00
@@ -188,12 +188,12 @@
                                 <input type="number" class="input-qty" value="1" min="1" max="10" step="1"
                                     data-decimals="0" required="" style="display: none;">
 
-                                <button style="min-width: 26px" class="btn btn-decrement" type="button"><i
-                                        class="fa-solid fa-minus"></i></button>
-                                <input type="text" style="text-align: center" class="input-qty" required=""
-                                    placeholder="1">
-                                <button style="min-width: 26px" class="btn btn-increment" type="button"><i
-                                        class="fa-solid fa-plus"></i></button>
+                                <button onclick="decrementQty()" style="min-width: 26px" class="btn btn-decrement"
+                                    type="button"><i class="fa-solid fa-minus"></i></button>
+                                <input type="text" value="1" id="input-qtyCart" style="text-align: center"
+                                    class="input-qty" required="" placeholder="1">
+                                <button onclick="incrementQty()" style="min-width: 26px" class="btn btn-increment"
+                                    type="button"><i class="fa-solid fa-plus"></i></button>
                             </div>
                         </div>
                         <!-- End .product-details-quantity -->
@@ -201,8 +201,9 @@
 
                     <div class="add-to-cart">
                         <i class="fa-solid fa-cart-plus"></i>
-                        <a href="#" class="btn-cart"><span>add to cart</span></a>
-
+                        <a data-id="1" data-price="2000" data-title="Product one" href="#" class="btn-cart"><span>add to
+                                cart</span></a>
+                        <button data-id="1" data-price="2000" data-title="Product one">add</button>
                     </div>
                     <div class="add-to-whishlist">
                         <i class="fa-brands fa-gratipay"></i>
@@ -293,7 +294,7 @@
         </footer>
 
         <!--End Footer-->
-
+        <script src="js/cart.js"></script>
         <script src="js/app.js"></script>
     </body>
 
