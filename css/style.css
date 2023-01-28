@@ -780,6 +780,9 @@ box-icon:hover,
 	margin-bottom: 25px;
 }
 
+.box .options i {
+	color: white;
+}
 
 .box .options a {
 	color: white;
