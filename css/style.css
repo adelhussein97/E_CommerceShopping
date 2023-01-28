@@ -204,7 +204,7 @@ body {
 	display: flex;
 }
 
-.input-search>button {
+.input-search button {
 	background-color: var(--white);
 	width: 35px;
 	cursor: pointer;
@@ -213,10 +213,15 @@ body {
 	z-index: 1;
 	position: relative;
 	right: 52px;
-	height: 35px;
+	height: 10px;
 	display: flex;
 	justify-content: right;
-	top: 10px;
+	top: 35px;
+}
+
+.icon-search box-icon {
+	position: relative;
+	bottom: 25px;
 }
 
 .form-control,
@@ -648,7 +653,7 @@ box-icon:hover,
 
 .btn-decrement {
 	position: relative;
-	top: 33px;
+	top: 45px;
 	z-index: 1;
 	left: 15px;
 	background-color: var(--white);
@@ -659,7 +664,7 @@ box-icon:hover,
 	position: relative;
 	right: 10px;
 	float: right;
-	bottom: 30px;
+	bottom: 58px;
 	background-color: var(--white);
 	border: none;
 }
@@ -943,7 +948,6 @@ a {
 .btn {
 	gap: 40px;
 	display: flex;
-	height: 80px;
 	justify-content: center;
 	margin-bottom: 20px;
 	margin-top: 30px;
