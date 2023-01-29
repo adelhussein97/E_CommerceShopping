@@ -57,22 +57,23 @@ function move() {
 
 // end slider
 
-
 // Start Single Product Details
-function incrementQty ()
-{
-	var qty = document.getElementById( "input-qtyCart" );
-	if ( qty.value < 10 )
-		qty.value++;
-
-
+function incrementQty() {
+	var qty = document.getElementById("input-qtyCart");
+	if (qty.value < 10) qty.value++;
 }
-function decrementQty ()
-{
-	var qty = document.getElementById( "input-qtyCart" );
-	if ( qty.value > 1 )
-		qty.value--;
+function decrementQty() {
+	var qty = document.getElementById("input-qtyCart");
+	if (qty.value > 1) qty.value--;
 }
-
 
 // End Single Product Details
+// data manipolation
+let sign_text = document.getElementById("icon");
+if (localStorage.userName) {
+	sign_text.textContent = localStorage.userName;
+}
+sign_text.onclick = function () {
+	window.open("form2.html", "_self");
+};
+//data manipolation
