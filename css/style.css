@@ -188,7 +188,7 @@ body {
 	border-bottom: 0.1rem solid #f4f4f4;
 }
 
-.header-middle .menu > li > a {
+.header-middle .menu>li>a {
 	letter-spacing: 0.01em;
 }
 
@@ -239,7 +239,7 @@ body {
 	padding-left: 10px;
 }
 
-.header-setting > div {
+.header-setting>div {
 	display: flex;
 	align-content: space-between;
 }
@@ -399,7 +399,7 @@ box-icon:hover,
 	background-color: var(--white);
 }
 
-.sticky + .slider {
+.sticky+.slider {
 	padding-top: 60px;
 }
 
@@ -1022,10 +1022,12 @@ a {
 #two {
 	transform: translateX(-100%);
 }
+
 #icon {
 	font-weight: bold;
 	font-size: 20px;
 }
+
 #sn input,
 #snn input {
 	margin-bottom: 20px;
@@ -1047,6 +1049,7 @@ a {
 	margin-right: 40px;
 	position: relative;
 }
+
 #sn span,
 #snn span {
 	position: absolute;
