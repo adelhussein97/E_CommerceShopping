@@ -1,26 +1,11 @@
-let Count = 0;
-let sum = 0;
+
 let cart = {};
-
-if ( localStorage.getItem( "Count" ) )
-{
-    Count = parseInt( localStorage.getItem( "Count" ) );
-}
-
-
-if ( localStorage.getItem( "sum" ) )
-{
-    sum = parseInt( localStorage.getItem( "sum" ) );
-}
 
 if ( localStorage.getItem( "cart" ) )
 {
     cart = JSON.parse( localStorage.getItem( "cart" ) );
 }
-
-updateCart();
-
-let btns = document.querySelectorAll( ".add-to-cart button" );
+let btns = document.querySelectorAll( "#add-to-cart-localstorage" );
 
 for ( let i = 0; i < btns.length; i++ )
 {
@@ -30,35 +15,136 @@ for ( let i = 0; i < btns.length; i++ )
 
 function add ( event )
 {
-    let price = Number( event.target.dataset.price );
-    let title = event.target.dataset.title;
+
     let id = event.target.dataset.id;
+    let title = event.target.dataset.prdname;
+    let price = Number( event.target.dataset.price );
+    let prdImage = event.target.dataset.prdimage;
+    //  If choose specific qty
+
+    let _qty = document.getElementById( "input-qtyCart" )
 
     if ( id in cart )
     {
-        cart[ id ].qty++;
+        cart[ id ].prdQty++;
     } else
     {
-        let cartItem = {
-            title: title,
-            price: price,
-            qty: 1
-        };
+        if ( qty.value > 1 )
+        {
+            let cartItem = {
+                prdName: title,
+                price: price,
+                qty: _qty.value,
+                Image: prdImage
+            };
+        }
+        else
+        {
+            let cartItem = {
+                prdName: title,
+                price: price,
+                qty: 1,
+                Image: prdImage
+            };
+        }
+
         cart[ id ] = cartItem
     }
 
-    Count++;
-    sum += price;
 
-    console.log( cart );
     localStorage.setItem( "cart", JSON.stringify( cart ) );
     updateCart();
 }
 
 function updateCart ()
 {
-    // document.getElementById( "sum" ).textContent = sum;
-    // document.getElementById( "Count" ).textContent = Count;
+    let Count = 0;
+    let sum = 0;
+
+    for ( var item in cart )
+    {
+        sum += cart[ item ].price;
+        Count++;
+    }
     localStorage.setItem( "sum", sum );
     localStorage.setItem( "Count", Count );
+    document.getElementsByClassName( "count-cart" )[ 0 ].textContent = localStorage.getItem( "Count" );
+}
+
+
+// Add Single Product Deatils to Local Storage
+
+function addSingleProduct ( event )
+{
+
+    let prdName = event.target.dataset.prdname;
+    let price = Number( event.target.dataset.price );
+    let prdImage = event.target.dataset.prdimage;
+    let ID = event.target.dataset.id;
+
+    localStorage.setItem( "prdName", prdName );
+    localStorage.setItem( "price", price );
+    localStorage.setItem( "prdImage", prdImage );
+    localStorage.setItem( "ID", ID );
+
+
+}
+
+// Get Product Details when Open any Product
+
+function LoadPrdDetails ()
+{
+    var title = document.getElementById( "product-title" )
+    var price = document.getElementById( "prd-price" )
+    var imagesrc = document.getElementById( "prd-image" )
+
+    title.innerHTML = localStorage.getItem( "prdName" );
+    price.innerHTML = "$ " + localStorage.getItem( "price" );
+    imagesrc.src = localStorage.getItem( "prdImage" );
+    updateCart()
+}
+
+
+
+function AddTocartFromSingleProduct ()
+{
+    let id = localStorage.getItem( "ID" );
+    let title = localStorage.getItem( "prdName" );
+    let price = Number( localStorage.getItem( "price" ) );
+    let prdImage = localStorage.getItem( "prdImage" );
+
+    if ( id in cart )
+    {
+        cart[ id ].prdQty++;
+    } else
+    {
+        let cartItem = {
+            prdName: title,
+            price: price,
+            qty: 1,
+            Image: prdImage
+        };
+        cart[ id ] = cartItem
+    }
+
+
+
+    localStorage.setItem( "cart", JSON.stringify( cart ) );
+    updateCart();
+
+}
+
+// Validate input qty number only
+function ValidateQty ( _event )
+{
+
+    var keyCode = _event.keyCode // backspace =8
+    const codes = [ 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 8 ]
+    if ( !codes.includes( keyCode ) )
+    {
+        _event.preventDefault();
+        return false;
+    }
+    return true;
+
 }

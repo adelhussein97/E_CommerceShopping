@@ -496,6 +496,11 @@ box-icon:hover,
 	height: auto;
 }
 
+.row #prd-image {
+	width: 550px;
+	height: 550px;
+}
+
 .fea-text {
 	position: absolute;
 	top: 40px;
