@@ -41,7 +41,6 @@ form_sign_up.addEventListener("submit", function (e) {
 });
 let form_log_in = document.getElementById("snn");
 let log_in_all_span = document.querySelectorAll("#snn span");
-console.log(log_in_all_span);
 form_log_in.addEventListener("submit", function (e) {
 	if (form_log_in[0].value != localStorage.email) {
 		log_in_all_span[0].style.display = "block";

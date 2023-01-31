@@ -5,6 +5,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	font-size-adjust: 100%;
+	scroll-behavior: smooth;
 }
 
 html,
@@ -188,7 +189,7 @@ body {
 	border-bottom: 0.1rem solid #f4f4f4;
 }
 
-.header-middle .menu>li>a {
+.header-middle .menu > li > a {
 	letter-spacing: 0.01em;
 }
 
@@ -239,7 +240,7 @@ body {
 	padding-left: 10px;
 }
 
-.header-setting>div {
+.header-setting > div {
 	display: flex;
 	align-content: space-between;
 }
@@ -399,7 +400,7 @@ box-icon:hover,
 	background-color: var(--white);
 }
 
-.sticky+.slider {
+.sticky + .slider {
 	padding-top: 60px;
 }
 
@@ -1089,3 +1090,199 @@ a {
 }
 
 /* end form */
+
+/* start members */
+.members {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 100px;
+	margin-bottom: 100px;
+}
+.member {
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.member img {
+	width: 100%;
+	cursor: pointer;
+	height: 300px;
+}
+.member .information {
+	background-color: var(--gray);
+	text-align: center;
+	font-size: 10px;
+	height: 310px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transition: 0.5s;
+	transform: translateY(100%);
+	cursor: pointer;
+}
+.member p {
+	font-size: 20px;
+	color: var(--bg-color);
+	font-weight: bold;
+}
+.member h1 {
+	color: white;
+	font-weight: bold;
+}
+/* end members */
+
+/* start rate */
+.section_1 {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.section_1 > h1 {
+	font-weight: bold;
+	text-align: start;
+	text-align: center;
+
+	margin-bottom: -30px;
+}
+.section_1 i {
+	cursor: pointer;
+}
+.data_rate {
+	display: flex;
+
+	padding: 10px;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.rating {
+	font-size: 100px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: black;
+}
+.data_rate .nom .stars_count i {
+	color: orange;
+	font-size: 30px;
+}
+.data_rate .nom h2 {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 55px;
+}
+.progres {
+	display: flex;
+	flex-direction: column;
+}
+.data_rate .progres div {
+	width: 600px;
+	height: 30px;
+	background-color: rgba(242, 223, 223, 0.667);
+	margin-bottom: 10px;
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+}
+.data_rate .progres div::after {
+	content: "";
+	height: 100%;
+	background-color: rgb(149, 149, 243);
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-radius: 10px;
+}
+.data_rate .progres div:first-child::after {
+	width: 80%;
+}
+.data_rate .progres div:nth-child(2):after {
+	width: 60%;
+}
+.data_rate .progres div:nth-child(3):after {
+	width: 40%;
+}
+.data_rate .progres div:nth-child(4):after {
+	width: 20%;
+}
+.data_rate .progres div:last-child::after {
+	width: 10%;
+}
+.stars {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+.stars span {
+	font-weight: bold;
+	font-size: 30px;
+}
+.stars div {
+	height: 30px;
+	margin-top: 15px;
+}
+.stars div i {
+	color: orange;
+	font-size: 30px;
+}
+.reviews {
+	margin-bottom: 50px;
+}
+.rev {
+	font-size: 40px;
+}
+.review {
+	display: flex;
+	align-items: center;
+	gap: 100px;
+	justify-content: center;
+	margin-top: 50px;
+}
+.person {
+	display: flex;
+	align-items: center;
+}
+.person img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.person .time {
+	color: gray;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 15px;
+	width: 100%;
+}
+.person .name,
+.coment {
+	margin-left: 15px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+.person .report {
+	margin-left: 15px;
+	font-weight: bold;
+	color: gray;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.str {
+	font-size: 20px;
+}
+.str i {
+	color: orange;
+	font-size: 40px;
+}
+
+/* end rate */
