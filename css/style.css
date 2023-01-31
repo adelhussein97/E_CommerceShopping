@@ -1109,6 +1109,8 @@ a {
 	cursor: pointer;
 	height: 300px;
 }
+.member img:hover {
+}
 .member .information {
 	background-color: var(--gray);
 	text-align: center;
