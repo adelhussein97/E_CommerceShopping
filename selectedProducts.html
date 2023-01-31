@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>E-Commerce Shopping</title>
+		<!-- Font Icon And Main Stlyling CSS File -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+		/>
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>E-Commerce Shopping</title>
-	<!-- Font Icon And Main Stlyling CSS File -->
-	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-	<link rel="stylesheet" href="css/all.min.css" />
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+		<!-- Seo Kayword and Description Website -->
+		<meta name="keywords" content="Furniture - eCommerce" />
+		<meta
+			name="description"
+			content="E-Commerce for Furniture Selling and Shipping"
+		/>
+		<meta name="author" content="ITI Team Members " />
+		<script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+	</head>
 
-	<!-- Seo Kayword and Description Website -->
-	<meta name="keywords" content="Furniture - eCommerce" />
-	<meta name="description" content="E-Commerce for Furniture Selling and Shipping" />
-	<meta name="author" content="ITI Team Members " />
-	<script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
-</head>
-
-<body>
-
+	<body>
 		<!-- Start Header -->
 
 		<header class="header">
@@ -131,48 +138,41 @@
 		</header>
 		<!-- End Header  -->
 
-
-	<!-- Start Cart -->
-	<main class="main">
-		<div class="page-header">
-
-			<h1 class="page-title">
-				Shopping Cart
-				<span style="color: var(--orange); font-size: 25px;">
-					Shop
-				</span>
-			</h1>
-
-		</div>
-
-		<!----------------------           ----------------------->
-		<nav>
-			<div class="container">
-				<ol class="cart-list">
-					<li class="list"><a href="index.html">Home &gt;</a></li>
-					<li class="list">Shop &gt;</li>
-					<li class="list">Shopping Cart</li>
-				</ol>
+		<!-- Start Cart -->
+		<main class="main">
+			<div class="page-header">
+				<h1 class="page-title">
+					Shopping Cart
+					<span style="color: var(--orange); font-size: 25px;">
+						Shop
+					</span>
+				</h1>
 			</div>
-		</nav>
 
-		<!----------------------           ----------------------->
+			<!----------------------           ----------------------->
+			<nav>
+				<div class="container">
+					<ol class="cart-list">
+						<li class="list"><a href="index.html">Home &gt;</a></li>
+						<li class="list">Shop &gt;</li>
+						<li class="list">Shopping Cart</li>
+					</ol>
+				</div>
+			</nav>
 
+			<!----------------------           ----------------------->
 
-
-
-		<div class="cart-bottom-container">
-
-			<div class="container">
-				<div class="contentrr">
-					<div class="left">
-						<div class="left-div-firstRow">
-							<div class="colum-1">Product</div>
-							<div class="colum-2">Price</div>
-							<div class="colum-3">Quantity</div>
-							<div class="colum-4">Total</div>
-						</div>
-						<!-- <div class="left-div-firstRow">
+			<div class="cart-bottom-container">
+				<div class="container">
+					<div class="contentrr">
+						<div class="left">
+							<div class="left-div-firstRow">
+								<div class="colum-1">Product</div>
+								<div class="colum-2">Price</div>
+								<div class="colum-3">Quantity</div>
+								<div class="colum-4">Total</div>
+							</div>
+							<!-- <div class="left-div-firstRow">
 							<div class="colum-1 title-row"><img src="" class="product-image"><div>test product</div></div>
 							<div class="colum-2">$100</div>
 							<div class="colum-3 counter-row">
@@ -184,152 +184,137 @@
 							</div>
 							<div class="colum-4">$100</div>
 							<div class="remove">X</div> -->
-						<!-- </div> -->
-						<div id="firstProduct" class="left-div-firstRow">
-							<div class="colum-1 title-row"><img id="image" src="" class="product-image"><div id="prname">test product</div></div>
-							<div id="price" class="colum-2"> $150</div>
-							<div class="colum-3 counter-row">
-								<div class="counter">
-									<div id="mines" class="menis">-</div>
-									<div id="numOfProduct" class="number">1</div>
-									<div id="plus" class="puls">+</div>
+							<!-- </div> -->
+							<div id="firstProduct" class="left-div-firstRow">
+								<div class="colum-1 title-row">
+									<img id="image" src="" class="product-image" />
+									<div id="prname">test product</div>
+								</div>
+								<div id="price" class="colum-2">$150</div>
+								<div class="colum-3 counter-row">
+									<div class="counter">
+										<div id="mines" class="menis">-</div>
+										<div id="numOfProduct" class="number">1</div>
+										<div id="plus" class="puls">+</div>
+									</div>
+								</div>
+								<div id="total" class="colum-4">$150</div>
+								<div id="delete" class="remove">X</div>
+							</div>
+						</div>
+
+						<!----------------------           ----------------------->
+						<div class="right">
+							<div class="first-row">
+								<h1>Cart Total</h1>
+							</div>
+							<div class="second-row">
+								<div>Subtotal</div>
+								<div>$160.00</div>
+							</div>
+							<div>
+								<div>Shipping</div>
+								<div class="second-row">
+									<input type="checkbox" />
+									<div>Free Shipping</div>
+									<div>$0.00</div>
+								</div>
+								<div class="second-row">
+									<input type="checkbox" />
+									<div>Standart</div>
+									<div>$10.00</div>
+								</div>
+								<div class="second-row">
+									<input type="checkbox" />
+									<div>Express</div>
+									<div>$20.00</div>
+								</div>
+
+								<div class="final-row">
+									<div class="total-row">Total</div>
+									<div class="total-row">$160.00</div>
 								</div>
 							</div>
-							<div id="total" class="colum-4">$150</div>
-							<div id="delete" class="remove">X</div>
-						</div>
-						
-
-
-					</div>
-
-					<!----------------------           ----------------------->
-					<div class="right">
-						<div class="first-row">
-							<h1>Cart Total</h1>
-						</div>
-						<div class="second-row">
-							<div>Subtotal</div>
-							<div>$160.00</div>
-						</div>
-						<div >
-							<div>Shipping</div>
-							<div class="second-row">
-								<input type="checkbox">
-								<div>Free Shipping</div>
-								<div>$0.00</div>
-							</div>
-							<div class="second-row">
-								<input type="checkbox">
-								<div>Standart</div>
-								<div>$10.00</div>
-							</div>
-							<div class="second-row">
-								<input type="checkbox">
-								<div>Express</div>
-								<div>$20.00</div>
-							</div>
-
-							<div class="final-row">
-								<div class="total-row">Total</div>
-								<div class="total-row">$160.00</div>
-							</div>
-							
-							
 						</div>
 					</div>
 				</div>
+			</div>
+		</main>
 
+		<!--Start Footer-->
+		<footer class="footer">
+			<div class="container">
+				<div class="footerleft">
+					<img class="logo" src="images/logo.jfif" />
+					<div>
+						<p>
+							Praesent dapibus, neque id cursus ucibus, tortor neque egestas
+							augue,<br />
+							eu vulputate magna eros eu erat.
+						</p>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+						<div class="Clear"></div>
+					</div>
+				</div>
+
+				<div class="footerright">
+					<div class="AboutUs">
+						<h4>Information</h4>
+						<ul>
+							<li><a href="about-2.html">About Molla</a></li>
+							<li><a href="#">How to shop on Molla</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="contact-2.html">Contact us</a></li>
+							<li><a href="login.html">Login</a></li>
+						</ul>
+					</div>
+
+					<div class="AboutUs">
+						<h4>Customer Services</h4>
+						<ul>
+							<li><a href="#">Payment Methods</a></li>
+							<li><a href="#">How to shop on Molla</a></li>
+							<li><a href="#">Money-back guarantee!</a></li>
+							<li><a href="#">Returns</a></li>
+						</ul>
+					</div>
+
+					<div class="AboutUs">
+						<h4>My Account</h4>
+						<ul>
+							<li><a href="#">Sign In</a></li>
+							<li><a href="cart.html">View Cart</a></li>
+							<li><a href="#">My Wishlist</a></li>
+							<li><a href="#">Track My Order</a></li>
+							<li><a href="#">Help</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="Clear"></div>
 			</div>
 
-
-		</div>
-
-
-	</main>
-
-
-
-
-
-	<!--Start Footer-->
-	<footer class="footer">
-		<div class="container">
-			<div class="footerleft">
-				<img class="logo" src="images/logo.jfif" />
-				<div>
-					<p>
-						Praesent dapibus, neque id cursus ucibus, tortor neque egestas
-						augue,<br />
-						eu vulputate magna eros eu erat.
+			<hr />
+			<div class="container">
+				<div class="left">
+					<p style="display: inline-block;">
+						Copyright © 2022 Molla Store. All Rights Reserved.
 					</p>
-					<a href="#"><i class="fa-brands fa-facebook"></i></a>
-					<a href="#"><i class="fa-brands fa-twitter"></i></a>
-					<a href="#"><i class="fa-brands fa-instagram"></i></a>
-					<a href="#"><i class="fa-brands fa-youtube"></i></a>
-
-					<div class="Clear"></div>
 				</div>
-			</div>
-
-			<div class="footerright">
-				<div class="AboutUs">
-					<h4>Information</h4>
-					<ul>
-						<li><a href="about-2.html">About Molla</a></li>
-						<li><a href="#">How to shop on Molla</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="contact-2.html">Contact us</a></li>
-						<li><a href="login.html">Login</a></li>
-					</ul>
+				<div class="right">
+					<img src="images/payments.png" />
 				</div>
 
-				<div class="AboutUs">
-					<h4>Customer Services</h4>
-					<ul>
-						<li><a href="#">Payment Methods</a></li>
-						<li><a href="#">How to shop on Molla</a></li>
-						<li><a href="#">Money-back guarantee!</a></li>
-						<li><a href="#">Returns</a></li>
-
-					</ul>
-				</div>
-
-				<div class="AboutUs">
-					<h4>My Account</h4>
-					<ul>
-						<li><a href="#">Sign In</a></li>
-						<li><a href="cart.html">View Cart</a></li>
-						<li><a href="#">My Wishlist</a></li>
-						<li><a href="#">Track My Order</a></li>
-						<li><a href="#">Help</a></li>
-					</ul>
-				</div>
+				<div class="Clear"></div>
 			</div>
+		</footer>
 
-			<div class="Clear"></div>
-		</div>
+		<!--End Footer-->
 
-		<hr />
-		<div class="container">
-			<div class="left">
-				<p style="display: inline-block;">
-					Copyright © 2022 Molla Store. All Rights Reserved.
-				</p>
-
-			</div>
-			<div class="right">
-
-				<img src="images/payments.png" />
-			</div>
-
-			<div class="Clear"></div>
-		</div>
-	</footer>
-
-	<!--End Footer-->
-
-	<script src="/js/selectedProducts.js"></script>
-</body>
-
+		<script src="/js/selectedProducts.js"></script>
+	</body>
 </html>
