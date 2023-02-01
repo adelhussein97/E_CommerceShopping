@@ -24,3 +24,7 @@ sign_text.onclick = function () {
 	window.open("login.html", "_self");
 };
 //data manipolation
+var selectcart = document.getElementsByClassName("cart");
+selectcart[0].onclick = function () {
+	window.open("selectedProducts.html", "_self");
+};

@@ -63,3 +63,7 @@ sign_text.onclick = function () {
 	localStorage.clear();
 	window.open("login.html", "_self");
 };
+var selectcart = document.getElementsByClassName("cart");
+selectcart[0].onclick = function () {
+	window.open("selectedProducts.html", "_self");
+};
