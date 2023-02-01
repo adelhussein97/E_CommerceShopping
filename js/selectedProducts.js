@@ -1,25 +1,27 @@
-var imgee = document.getElementById("image");
+var imgee = document.getElementById( "image" );
 
-var imgproductNameee = document.getElementById("prname");
+var imgproductNameee = document.getElementById( "prname" );
 
-imgproductNameee.textContent = localStorage.getItem("prdName");
+imgproductNameee.textContent = localStorage.getItem( "prdName" );
 
-imgee.src = localStorage.getItem("prdImage");
+imgee.src = localStorage.getItem( "prdImage" );
+debugger
+console.log( localStorage.getItem( "cart" ) );
 
-console.log(localStorage.getItem("cart"));
+var pr = document.getElementById( "price" );
 
-var pr = document.getElementById("price");
+var total = document.getElementById( "total" );
 
-var total = document.getElementById("total");
-
-pr.textContent = localStorage.getItem("price");
+pr.textContent = localStorage.getItem( "price" );
 
 document
-	.getElementById("mines")
-	.addEventListener("click", function decrease(ev) {
-		var txt = document.getElementById("numOfProduct");
+	.getElementById( "mines" )
+	.addEventListener( "click", function decrease ( ev )
+	{
+		var txt = document.getElementById( "numOfProduct" );
 
-		if (txt.textContent <= 0) {
+		if ( txt.textContent <= 0 )
+		{
 			// ev.preventDefault();
 			return false;
 		}
@@ -27,20 +29,22 @@ document
 		txt.textContent -= 1;
 
 		total.textContent =
-			parseFloat(total.textContent) - parseFloat(pr.textContent);
+			parseFloat( total.textContent ) - parseFloat( pr.textContent );
 
 		// txt.innerHTML = num
-	});
+	} );
 
 total.textContent = pr.textContent;
 
 document
-	.getElementById("plus")
-	.addEventListener("click", function increase(ev) {
-		var txt = document.getElementById("numOfProduct");
+	.getElementById( "plus" )
+	.addEventListener( "click", function increase ( ev )
+	{
+		var txt = document.getElementById( "numOfProduct" );
 		// var num = parseInt(txt.textContent)
 
-		if (txt.textContent == 10) {
+		if ( txt.textContent == 10 )
+		{
 			// ev.preventDefault();
 			return false;
 		}
@@ -48,22 +52,26 @@ document
 		txt.textContent++;
 
 		total.textContent =
-			parseFloat(total.textContent) + parseFloat(pr.textContent);
-	});
+			parseFloat( total.textContent ) + parseFloat( pr.textContent );
+	} );
 
-var deleteProduct = (document.getElementById("delete").onclick = function () {
-	var fProduct = document.getElementById("firstProduct");
+var deleteProduct = ( document.getElementById( "delete" ).onclick = function ()
+{
+	var fProduct = document.getElementById( "firstProduct" );
 	fProduct.remove();
-});
-let sign_text = document.getElementById("icon");
-if (localStorage.userName) {
+} );
+let sign_text = document.getElementById( "icon" );
+if ( localStorage.userName )
+{
 	sign_text.textContent = localStorage.userName;
 }
-sign_text.onclick = function () {
+sign_text.onclick = function ()
+{
 	localStorage.clear();
-	window.open("login.html", "_self");
+	window.open( "login.html", "_self" );
 };
-var selectcart = document.getElementsByClassName("cart");
-selectcart[0].onclick = function () {
-	window.open("selectedProducts.html", "_self");
+var selectcart = document.getElementsByClassName( "cart" );
+selectcart[ 0 ].onclick = function ()
+{
+	window.open( "selectedProducts.html", "_self" );
 };
