@@ -1,72 +1,57 @@
+var imgee = document.getElementById("image");
 
-var imgee = document.getElementById("image")
+var imgproductNameee = document.getElementById("prname");
 
-var imgproductNameee = document.getElementById("prname")
+imgproductNameee.textContent = localStorage.getItem("prdName");
 
-imgproductNameee.textContent = localStorage.getItem("prdName")
+imgee.src = localStorage.getItem("prdImage");
 
-imgee.src = localStorage.getItem("prdImage")
+console.log(localStorage.getItem("cart"));
 
+var pr = document.getElementById("price");
 
-console.log(localStorage.getItem("cart"))
+var total = document.getElementById("total");
 
-var pr = document.getElementById("price")
+pr.textContent = localStorage.getItem("price");
 
-var total = document.getElementById("total")
+document
+	.getElementById("mines")
+	.addEventListener("click", function decrease(ev) {
+		var txt = document.getElementById("numOfProduct");
 
-pr.textContent = localStorage.getItem("price")
+		if (txt.textContent <= 0) {
+			// ev.preventDefault();
+			return false;
+		}
 
+		txt.textContent -= 1;
 
-document.getElementById("mines").addEventListener("click", function decrease(ev){
-    var txt = document.getElementById("numOfProduct")
-    
-    if (txt.textContent <= 0)
-    {
-        // ev.preventDefault();
-        return false;
-    }
+		total.textContent =
+			parseFloat(total.textContent) - parseFloat(pr.textContent);
 
-    txt.textContent -= 1;
+		// txt.innerHTML = num
+	});
 
-    total.textContent = parseFloat(total.textContent) - parseFloat(pr.textContent)
+total.textContent = pr.textContent;
 
-    // txt.innerHTML = num
-})
+document
+	.getElementById("plus")
+	.addEventListener("click", function increase(ev) {
+		var txt = document.getElementById("numOfProduct");
+		// var num = parseInt(txt.textContent)
 
-    
+		if (txt.textContent == 10) {
+			// ev.preventDefault();
+			return false;
+		}
 
-total.textContent = pr.textContent
+		txt.textContent++;
 
-document.getElementById("plus").addEventListener("click", function increase(ev){
-    var txt = document.getElementById("numOfProduct")
-    // var num = parseInt(txt.textContent)
-    
-    if (txt.textContent == 10)
-    {
-        // ev.preventDefault();
-        return false;
-    }
+		total.textContent =
+			parseFloat(total.textContent) + parseFloat(pr.textContent);
+	});
 
-    txt.textContent ++;
-
-    total.textContent = parseFloat(total.textContent) + parseFloat(pr.textContent)
-
-})
-
-
-var deleteProduct = document.getElementById("delete").onclick = function(){
-    var fProduct = document.getElementById("firstProduct")
-    fProduct.remove();
-}
-
-
-var selectcart = document.getElementById("cartId").onclick = function(){
-
-    open("selectedProducts.html")
-}
-
-
-
-
-
-
+var deleteProduct = (document.getElementById("delete").onclick = function () {
+	var fProduct = document.getElementById("firstProduct");
+	fProduct.remove();
+});

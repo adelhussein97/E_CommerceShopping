@@ -165,3 +165,8 @@ fetch("https://reqres.in/api/users")
 	});
 
 // end rate
+var selectcart = document.getElementsByClassName("cart");
+selectcart[0].onclick = function () {
+	window.open("selectedProducts.html", "_self");
+};
+//
