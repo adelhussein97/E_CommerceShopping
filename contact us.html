@@ -160,11 +160,17 @@
 				</div>
 				<div class="right">
 					<h2>Contact Us</h2>
-					<input type="text" class="field" placeholder="your Name" />
-					<input type="email" class="field" placeholder="your Email" />
-					<input type="text" class="field" placeholder="your phone" />
-					<textarea class="field area" placeholder="Message"></textarea>
-					<button class="btn">Send</button>
+					<form onsubmit="validateform(event)">
+					<input id="input_1" type="text" class="field" placeholder="your Name" oninput="username()"/>
+					<span id="fspan1"></span>
+				<input id="input_2" type="email" class="field" placeholder="your Email"  oninput="userEmail()" />
+				<span id="fspan2"></span>
+				<input id="input_3" type="text" class="field" placeholder="your phone" oninput="userphone()"/>
+				<span id="fspan3"></span>
+				<textarea id="textarea_1" class="field area" placeholder="Message"></textarea>
+				<input type="submit" value="Send" class="btn" id="_btn"/>
+				<!-- <button id="_btn" class="btn" onclick="validateform(event)" >Send</button> -->
+			</form>
 				</div>
 			</div>
 		</div>
@@ -242,7 +248,7 @@
 		</footer>
 
 		<!--End Footer-->
-
+		<script src="js/cookies.js"></script>
 		<script src="js/cart.js"></script>
 		<script src="js/app.js"></script>
 	</body>
