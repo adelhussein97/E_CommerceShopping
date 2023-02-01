@@ -1330,11 +1330,12 @@ a {
 }
 
 .rightt {
-	width: 40%;
-	background-color: rgb(251, 251, 182);
+	width: 30%;
 	padding-left: 35px;
 	padding-right: 35px;
 	margin-left: 20px;
+	border: 1px dashed gray;
+	background-color: rgba(238, 232, 226, 0.562);
 }
 .counter {
 	display: flex;
