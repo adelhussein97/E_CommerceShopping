@@ -55,3 +55,11 @@ var deleteProduct = (document.getElementById("delete").onclick = function () {
 	var fProduct = document.getElementById("firstProduct");
 	fProduct.remove();
 });
+let sign_text = document.getElementById("icon");
+if (localStorage.userName) {
+	sign_text.textContent = localStorage.userName;
+}
+sign_text.onclick = function () {
+	localStorage.clear();
+	window.open("login.html", "_self");
+};

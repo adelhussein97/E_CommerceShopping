@@ -1328,7 +1328,10 @@ a {
 .left {
 	width: 70%;
 }
-
+.left img {
+	width: 200px;
+	height: 200px;
+}
 .rightt {
 	width: 30%;
 	padding-left: 35px;
@@ -1407,7 +1410,9 @@ a {
 	margin-bottom: 60px;
 	padding-bottom: 10px;
 }
-
+.prname {
+	margin-left: 30px;
+}
 .total-row {
 	font-weight: bold;
 	font-size: 20px;
