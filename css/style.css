@@ -1368,8 +1368,9 @@ a {
 }
 
 .left img {
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
+	margin-right: 36px;
 }
 
 .rightt {
@@ -1379,6 +1380,9 @@ a {
 	margin-left: 20px;
 	border: 1px dashed gray;
 	background-color: rgba(238, 232, 226, 0.562);
+	position: absolute;
+	top: 62%;
+	right: 4%;
 }
 
 .counter {
@@ -1418,7 +1422,7 @@ a {
 .cart-div-items {
 	display: flex;
 	align-items: center;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .left-div-firstRow,

@@ -1,66 +1,59 @@
-function ShowCartItems ()
-{
+function ShowCartItems() {
+	let cart = {};
+	if (localStorage.getItem("cart")) {
+		cart = JSON.parse(localStorage.getItem("cart"));
+	}
+	let tbody = document.getElementById("cart");
+	var totalcart = document.getElementById("Totalcart");
+	totalcart.innerHTML = "$ " + localStorage.getItem("sum");
 
-    let cart = {};
-    if ( localStorage.getItem( "cart" ) )
-    {
-        cart = JSON.parse( localStorage.getItem( "cart" ) );
-    }
+	var countcart = document.getElementsByClassName("count-cart")[0];
+	countcart.innerHTML = localStorage.Count;
 
-    let tbody = document.getElementById( "cart" );
-    var totalcart = document.getElementById( "Totalcart" )
-    totalcart.innerHTML = "$ " + localStorage.getItem( "sum" )
+	for (let id in cart) {
+		let item = cart[id];
+		let tr = document.createElement("tr");
+		let image_td = document.createElement("td");
 
-    var countcart = document.getElementsByClassName( "count-cart" )[ 0 ]
-    countcart.innerHTML = localStorage.Count
+		let image = document.createElement("img");
+		image.src = item.Image;
+		image_td.appendChild(image);
+		tr.appendChild(image_td);
 
-    for ( let id in cart )
-    {
-        let item = cart[ id ];
+		let title_td = document.createElement("td");
+		title_td.textContent = item.prdName;
+		tr.appendChild(title_td);
 
-        let tr = document.createElement( 'tr' )
-        let image_td = document.createElement( 'td' )
+		let price_td = document.createElement("td");
+		price_td.textContent = item.price;
+		tr.appendChild(price_td);
 
-        let image = document.createElement( 'img' )
-        image.src = item.Image
-        image_td.appendChild( image )
-        tr.appendChild( image_td )
+		let input_td = document.createElement("td");
+		let input = document.createElement("input");
+		input.setAttribute("type", "number");
+		input.addEventListener("change", function () {
+			if (input.value < 0) {
+				return false;
+			}
+			total_td.textContent = Number(input.value) * Number(item.price);
+		});
+		input.value = item.qty;
+		input.style.width = "100px";
+		input.style.height = "30px";
+		input.style.textAlign = "center";
 
-        let title_td = document.createElement( 'td' )
-        title_td.textContent = item.prdName
-        tr.appendChild( title_td )
+		input_td.appendChild(input);
+		tr.appendChild(input_td);
 
-        let price_td = document.createElement( "td" )
-        price_td.textContent = item.price;
-        tr.appendChild( price_td );
+		var total_td = document.createElement("td");
+		total_td.textContent = Number(item.qty) * Number(item.price);
 
-        let input_td = document.createElement( "td" )
-        let input = document.createElement( "input" )
-        input.setAttribute( "type", "number" )
-        input.addEventListener( "change", function ()
-        {
-            total_td.textContent = Number( input.value ) * Number( item.price )
-        } )
-        input.value = item.qty;
-        input.style.width = "100px";
-        input.style.height = "30px";
-        input.style.textAlign = "center";
+		tr.appendChild(total_td);
 
-
-        input_td.appendChild( input )
-        tr.appendChild( input_td );
-
-        var total_td = document.createElement( "td" )
-        total_td.textContent = Number( item.qty ) * Number( item.price );
-
-        tr.appendChild( total_td );
-
-        let remove_td = document.createElement( "td" )
-        remove_td.textContent = "X";
-        tr.appendChild( remove_td );
-
-        tbody.appendChild( tr )
-
-
-    }
+		let remove_td = document.createElement("td");
+		remove_td.textContent = "X";
+		remove_td.className = "remove_this";
+		tr.appendChild(remove_td);
+		tbody.appendChild(tr);
+	}
 }
