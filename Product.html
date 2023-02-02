@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>E-Commerce Shopping</title>
 		<!-- Font Icon And Main Stlyling CSS File -->
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-		/>
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 		<link rel="stylesheet" href="css/all.min.css" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet" />
 		<!-- Seo Kayword and Description Website -->
 		<meta name="keywords" content="Furniture - eCommerce" />
-		<meta
-			name="description"
-			content="E-Commerce for Furniture Selling and Shipping"
-		/>
+		<meta name="description" content="E-Commerce for Furniture Selling and Shipping" />
 		<meta name="author" content="ITI Team Members " />
 		<script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
 	</head>
@@ -49,9 +38,7 @@
 					<!-- End .header-left -->
 					<!-- Start Header Right -->
 					<div class="header-right">
-						<a class="icon" id="icon" href="login.html" data-toggle="modal"
-							>Sign in / Sign up</a
-						>
+						<a class="icon" id="icon" href="login.html" data-toggle="modal">Sign in / Sign up</a>
 					</div>
 					<!-- End .header-right -->
 				</div>
@@ -72,15 +59,8 @@
 						<div class="header-search">
 							<form action="#" method="get">
 								<div class="input-search">
-									<input
-										onfocus="changeBorder()"
-										onblur="resetToDefault()"
-										type="search"
-										class="form-control"
-										name="q"
-										id="q"
-										placeholder="Search product ..."
-									/>
+									<input onfocus="changeBorder()" onblur="resetToDefault()" type="search"
+										class="form-control" name="q" id="q" placeholder="Search product ..." />
 									<button class="icon-search" type="submit">
 										<box-icon name="search-alt-2"></box-icon>
 									</button>
@@ -102,7 +82,7 @@
 								<p>Wishlist</p>
 							</div>
 							<div class="cart">
-								<box-icon class="icon" name="cart-alt"></box-icon>
+								<a href="cart.html"><box-icon class="icon" name="cart-alt"></box-icon></a>
 								<span class="count-cart"></span>
 								<p>Cart</p>
 							</div>
@@ -131,9 +111,7 @@
 					</div>
 					<div class="header-right">
 						<p class="head-right">
-							<span
-								><box-icon type="solid" name="hourglass-top"></box-icon></span
-							><span>Clearance</span>
+							<span><box-icon type="solid" name="hourglass-top"></box-icon></span><span>Clearance</span>
 							Up to 30% Off
 						</p>
 					</div>
@@ -149,15 +127,9 @@
 			</h1>
 			<div class="product">
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="1"
-							data-prdname="T-shirt"
-							data-price="200"
-							data-prdimage="images/productImages/Men1.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Men1.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="1" data-prdname="T-shirt" data-price="200"
+							data-prdimage="images/productImages/Men1.jpg" onclick="addSingleProduct(event)"
+							src="images/productImages/Men1.jpg" /></a>
 
 					<h2>sweatshirt</h2>
 					<p>Cotton sweatshirt with a hood, a zip and side pockets.</p>
@@ -170,27 +142,16 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="1"
-							data-prdname="T-shirt"
-							data-price="200"
-							data-prdimage="images/productImages/Men1.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="1" data-prdname="T-shirt" data-price="200"
+							data-prdimage="images/productImages/Men1.jpg" href="single-product.html">Add To Cart <i
+								class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="2"
-							data-prdname="Unisex zip-up hooded sweatshirt."
-							data-price="450"
-							data-prdimage="images/productImages/Men2.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Men2.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="2" data-prdname="Unisex zip-up hooded sweatshirt."
+							data-price="450" data-prdimage="images/productImages/Men2.jpg"
+							onclick="addSingleProduct(event)" src="images/productImages/Men2.jpg" /></a>
 
 					<h2>sweatshirt</h2>
 					<p>Unisex zip-up hooded sweatshirt.</p>
@@ -203,27 +164,16 @@
 						<i class="filled fas fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="2"
-							data-prdname="Unisex zip-up hooded sweatshirt."
-							data-price="450"
-							data-prdimage="images/productImages/Men2.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="2" data-prdname="Unisex zip-up hooded sweatshirt."
+							data-price="450" data-prdimage="images/productImages/Men2.jpg"
+							href="single-product.html">Add To Cart <i class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="3"
-							data-prdname="Men's hooded sweatshirt."
-							data-price="700"
-							data-prdimage="images/productImages/Men3.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Men3.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="3" data-prdname="Men's hooded sweatshirt."
+							data-price="700" data-prdimage="images/productImages/Men3.jpg"
+							onclick="addSingleProduct(event)" src="images/productImages/Men3.jpg" /></a>
 
 					<h2>sweatshirt</h2>
 					<p>Men's hooded sweatshirt.</p>
@@ -236,27 +186,17 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="3"
-							data-prdname="Men's hooded sweatshirt."
-							data-price="700"
-							data-prdimage="images/productImages/Men3.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="3" data-prdname="Men's hooded sweatshirt."
+							data-price="700" data-prdimage="images/productImages/Men3.jpg"
+							href="single-product.html">Add To Cart <i class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="4"
+					<a href="single-product.html"><img data-id="4"
 							data-prdname="A printed long-sleeved hooded sweatshirt in high quality Melton cotton."
-							data-price="1200"
-							data-prdimage="images/productImages/Men4.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Men4.jpg"
-					/></a>
+							data-price="1200" data-prdimage="images/productImages/Men4.jpg"
+							onclick="addSingleProduct(event)" src="images/productImages/Men4.jpg" /></a>
 
 					<h2>sweatshirt</h2>
 					<p>
@@ -272,27 +212,18 @@
 						<i class="filled fas fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="4"
+						<a id="add-to-cart-localstorage" data-id="4"
 							data-prdname="A printed long-sleeved hooded sweatshirt in high quality Melton cotton."
-							data-price="1200"
-							data-prdimage="images/productImages/Men4.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+							data-price="1200" data-prdimage="images/productImages/Men4.jpg"
+							href="single-product.html">Add To Cart <i class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="5"
+					<a href="single-product.html"><img data-id="5"
 							data-prdname="Black bomber jacket with a removable capecho and zip - Unisex"
-							data-price="850"
-							data-prdimage="images/productImages/Men5.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Men5.jpg"
-					/></a>
+							data-price="850" data-prdimage="images/productImages/Men5.jpg"
+							onclick="addSingleProduct(event)" src="images/productImages/Men5.jpg" /></a>
 
 					<h2>Black Jacket</h2>
 					<p>Black bomber jacket with a removable capecho and zip - Unisex</p>
@@ -305,27 +236,18 @@
 						<i class="filled fas fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="5"
+						<a id="add-to-cart-localstorage" data-id="5"
 							data-prdname="Black bomber jacket with a removable capecho and zip - Unisex"
-							data-price="850"
-							data-prdimage="images/productImages/Men5.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+							data-price="850" data-prdimage="images/productImages/Men5.jpg"
+							href="single-product.html">Add To Cart <i class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="6"
-							data-prdname="Ted Marchel Men V-Neck Long Sleeves Pullover Light Blue."
-							data-price="350"
-							data-prdimage="images/productImages/Men6.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Men6.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="6"
+							data-prdname="Ted Marchel Men V-Neck Long Sleeves Pullover Light Blue." data-price="350"
+							data-prdimage="images/productImages/Men6.jpg" onclick="addSingleProduct(event)"
+							src="images/productImages/Men6.jpg" /></a>
 
 					<h2>Blue Pullover</h2>
 					<p>Ted Marchel Men V-Neck Long Sleeves Pullover Light Blue.</p>
@@ -338,27 +260,18 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="6"
-							data-prdname="Ted Marchel Men V-Neck Long Sleeves Pullover Light Blue."
-							data-price="350"
-							data-prdimage="images/productImages/Men6.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="6"
+							data-prdname="Ted Marchel Men V-Neck Long Sleeves Pullover Light Blue." data-price="350"
+							data-prdimage="images/productImages/Men6.jpg" href="single-product.html">Add To Cart <i
+								class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="7"
-							data-prdname="Izor Ribbed V-Neck Full Sleeves Pullover Black."
-							data-price="250"
-							data-prdimage="images/productImages/Men7.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Men7.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="7"
+							data-prdname="Izor Ribbed V-Neck Full Sleeves Pullover Black." data-price="250"
+							data-prdimage="images/productImages/Men7.jpg" onclick="addSingleProduct(event)"
+							src="images/productImages/Men7.jpg" /></a>
 
 					<h2>Black Pullover</h2>
 					<p>Izor Ribbed V-Neck Full Sleeves Pullover Black.</p>
@@ -371,28 +284,19 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="7"
-							data-prdname="Izor Ribbed V-Neck Full Sleeves Pullover Black."
-							data-price="250"
-							data-prdimage="images/productImages/Men7.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="7"
+							data-prdname="Izor Ribbed V-Neck Full Sleeves Pullover Black." data-price="250"
+							data-prdimage="images/productImages/Men7.jpg" href="single-product.html">Add To Cart <i
+								class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="8"
-							data-prdname="Andora High Cole Knitted Plain Black Pullover"
-							data-price="1500"
-							data-prdimage="images/productImages/Men8.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Men8.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="8"
+							data-prdname="Andora High Cole Knitted Plain Black Pullover" data-price="1500"
+							data-prdimage="images/productImages/Men8.jpg" onclick="addSingleProduct(event)"
+							src="images/productImages/Men8.jpg" /></a>
 
 					<h2>Black Pullover</h2>
 					<p>Andora High Cole Knitted Plain Black Pullover</p>
@@ -405,14 +309,10 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="8"
-							data-prdname="Andora High Cole Knitted Plain Black Pullover"
-							data-price="1500"
-							data-prdimage="images/productImages/Men8.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="8"
+							data-prdname="Andora High Cole Knitted Plain Black Pullover" data-price="1500"
+							data-prdimage="images/productImages/Men8.jpg" href="single-product.html">Add To Cart <i
+								class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
@@ -425,15 +325,9 @@
 			</h1>
 			<div class="product">
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="9"
-							data-prdname="Long Women Coat - Brown."
-							data-price="1000"
-							data-prdimage="images/productImages/Woman1.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Woman1.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="9" data-prdname="Long Women Coat - Brown."
+							data-price="1000" data-prdimage="images/productImages/Woman1.jpg"
+							onclick="addSingleProduct(event)" src="images/productImages/Woman1.jpg" /></a>
 
 					<h2>Women Coat</h2>
 					<p>Long Women Coat - Brown.</p>
@@ -446,27 +340,16 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="9"
-							data-prdname="Long Women Coat - Brown."
-							data-price="1000"
-							data-prdimage="images/productImages/Woman1.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="9" data-prdname="Long Women Coat - Brown."
+							data-price="1000" data-prdimage="images/productImages/Woman1.jpg"
+							href="single-product.html">Add To Cart <i class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="10"
-							data-prdname="Black and elegant fur jacket."
-							data-price="1300"
-							data-prdimage="images/productImages/Woman2.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Woman2.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="10" data-prdname="Black and elegant fur jacket."
+							data-price="1300" data-prdimage="images/productImages/Woman2.jpg"
+							onclick="addSingleProduct(event)" src="images/productImages/Woman2.jpg" /></a>
 
 					<h2>Black Jacket</h2>
 					<p>Black and elegant fur jacket.</p>
@@ -479,26 +362,17 @@
 						<i class="filled fas fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							data-id="10"
-							data-prdname="Black and elegant fur jacket."
-							data-price="1300"
-							data-prdimage="images/productImages/Woman2.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a data-id="10" data-prdname="Black and elegant fur jacket." data-price="1300"
+							data-prdimage="images/productImages/Woman2.jpg" href="single-product.html">Add To Cart <i
+								class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a id="add-to-cart-localstorage" href="single-product.html"
-						><img
-							data-id="11"
-							data-prdname="Plush coat Woman."
-							data-price="950"
-							data-prdimage="images/productImages/Woman3.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Woman3.jpg"
-					/></a>
+					<a id="add-to-cart-localstorage" href="single-product.html"><img data-id="11"
+							data-prdname="Plush coat Woman." data-price="950"
+							data-prdimage="images/productImages/Woman3.jpg" onclick="addSingleProduct(event)"
+							src="images/productImages/Woman3.jpg" /></a>
 
 					<h2>Plush coat</h2>
 					<p>Plush coat Woman.</p>
@@ -511,27 +385,17 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="11"
-							data-prdname="Plush coat Woman."
-							data-price="950"
-							data-prdimage="images/productImages/Woman3.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="11" data-prdname="Plush coat Woman." data-price="950"
+							data-prdimage="images/productImages/Woman3.jpg" href="single-product.html">Add To Cart <i
+								class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="12"
-							data-prdname="Women's woolen cardigan with a joga capchal design."
-							data-price="1750"
-							data-prdimage="images/productImages/Woman4.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Woman4.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="12"
+							data-prdname="Women's woolen cardigan with a joga capchal design." data-price="1750"
+							data-prdimage="images/productImages/Woman4.jpg" onclick="addSingleProduct(event)"
+							src="images/productImages/Woman4.jpg" /></a>
 
 					<h2>woolen cardigan</h2>
 					<p>Women's woolen cardigan with a joga capchal design.</p>
@@ -544,27 +408,18 @@
 						<i class="filled fas fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="12"
-							data-prdname="Women's woolen cardigan with a joga capchal design."
-							data-price="1750"
-							data-prdimage="images/productImages/Woman4.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="12"
+							data-prdname="Women's woolen cardigan with a joga capchal design." data-price="1750"
+							data-prdimage="images/productImages/Woman4.jpg" href="single-product.html">Add To Cart <i
+								class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="13"
+					<a href="single-product.html"><img data-id="13"
 							data-prdname="Andiamo Fashion Plain Hooded Side Pockets Drawstring Coat for Women - Black"
-							data-price="2250"
-							data-prdimage="images/productImages/Woman5.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Woman5.jpg"
-					/></a>
+							data-price="2250" data-prdimage="images/productImages/Woman5.jpg"
+							onclick="addSingleProduct(event)" src="images/productImages/Woman5.jpg" /></a>
 
 					<h2>Andiamo Fashion</h2>
 					<p>
@@ -580,27 +435,18 @@
 						<i class="filled fas fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="13"
+						<a id="add-to-cart-localstorage" data-id="13"
 							data-prdname="Andiamo Fashion Plain Hooded Side Pockets Drawstring Coat for Women - Black"
-							data-price="2250"
-							data-prdimage="images/productImages/Woman5.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+							data-price="2250" data-prdimage="images/productImages/Woman5.jpg"
+							href="single-product.html">Add To Cart <i class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="14"
-							data-prdname="Mandarin collar with linen buttons from Andora"
-							data-price="3100"
-							data-prdimage="images/productImages/Woman6.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Woman6.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="14"
+							data-prdname="Mandarin collar with linen buttons from Andora" data-price="3100"
+							data-prdimage="images/productImages/Woman6.jpg" onclick="addSingleProduct(event)"
+							src="images/productImages/Woman6.jpg" /></a>
 
 					<h2>Mandarin collar</h2>
 					<p>Mandarin collar with linen buttons from Andora.</p>
@@ -613,27 +459,18 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="14"
-							data-prdname="Mandarin collar with linen buttons from Andora"
-							data-price="3100"
-							data-prdimage="images/productImages/Woman6.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="14"
+							data-prdname="Mandarin collar with linen buttons from Andora" data-price="3100"
+							data-prdimage="images/productImages/Woman6.jpg" href="single-product.html">Add To Cart <i
+								class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="15"
-							data-prdname="Coctail Lamb Fur Jacket For Women - 7517."
-							data-price="1205"
-							data-prdimage="images/productImages/Woman7.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Woman7.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="15"
+							data-prdname="Coctail Lamb Fur Jacket For Women - 7517." data-price="1205"
+							data-prdimage="images/productImages/Woman7.jpg" onclick="addSingleProduct(event)"
+							src="images/productImages/Woman7.jpg" /></a>
 
 					<h2>Coctail Lamb</h2>
 					<p>Coctail Lamb Fur Jacket For Women - 7517.</p>
@@ -646,27 +483,17 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="15"
-							data-prdname="Coctail Lamb Fur Jacket For Women - 7517."
-							data-price="1205"
-							data-prdimage="images/productImages/Woman7.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="15"
+							data-prdname="Coctail Lamb Fur Jacket For Women - 7517." data-price="1205"
+							data-prdimage="images/productImages/Woman7.jpg" href="single-product.html">Add To Cart <i
+								class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
 				<div class="box">
-					<a href="single-product.html"
-						><img
-							data-id="16"
-							data-prdname="Lambskin cocktail jacket for women"
-							data-price="1850"
-							data-prdimage="images/productImages/Woman8.jpg"
-							onclick="addSingleProduct(event)"
-							src="images/productImages/Woman8.jpg"
-					/></a>
+					<a href="single-product.html"><img data-id="16" data-prdname="Lambskin cocktail jacket for women"
+							data-price="1850" data-prdimage="images/productImages/Woman8.jpg"
+							onclick="addSingleProduct(event)" src="images/productImages/Woman8.jpg" /></a>
 
 					<h2>cocktail jacket</h2>
 					<p>Lambskin cocktail jacket for women</p>
@@ -679,14 +506,9 @@
 						<i class="fa-regular fa-star"></i>
 					</div>
 					<div class="options">
-						<a
-							id="add-to-cart-localstorage"
-							data-id="16"
-							data-prdname="Lambskin cocktail jacket for women"
-							data-price="1850"
-							data-prdimage="images/productImages/Woman8.jpg"
-							href="single-product.html"
-							>Add To Cart <i class="fa-solid fa-cart-plus"></i>
+						<a id="add-to-cart-localstorage" data-id="16" data-prdname="Lambskin cocktail jacket for women"
+							data-price="1850" data-prdimage="images/productImages/Woman8.jpg"
+							href="single-product.html">Add To Cart <i class="fa-solid fa-cart-plus"></i>
 						</a>
 					</div>
 				</div>
@@ -769,4 +591,5 @@
 		<script src="js/cart.js"></script>
 		<script src="js/app.js"></script>
 	</body>
+
 </html>

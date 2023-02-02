@@ -5,7 +5,7 @@ var imgproductNameee = document.getElementById( "prname" );
 imgproductNameee.textContent = localStorage.getItem( "prdName" );
 
 imgee.src = localStorage.getItem( "prdImage" );
-debugger
+
 console.log( localStorage.getItem( "cart" ) );
 
 var pr = document.getElementById( "price" );
